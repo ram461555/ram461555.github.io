@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<title>We Love Animals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+<style>
+body, html {
+  height: 100%;
+  font-family: 'Amaranth';
+  color:black!important;
+}
+
+.w3-container, .w3-panel {
+	padding :0px!important;
+}
+
+.column {
+  float: left;
+  width: 22%;
+  padding: 20px 10px 0px 10px;
+  height: 160px; /* Should be removed. Only for demonstration */
+  margin: 10px;
+  background-color:#008696;
+  border-radius: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("C:/Users/Rameshwar/Desktop/Ram/Images/Header_bg.png");
+  min-height: 530px;
+}
+
+#fd_listing {
+    font-size: 14px!important;
+     font-family: 'Amaranth';
+	max-width:800px;
+	margin:auto;
+}
+
+#rcorners1 {
+  border-radius: 15px;
+  background: #FFF;
+  padding: 10px; 
+  width: 600px;
+  height: 70px;  
+  margin:auto;
+}
+
+.w3-theme-l1 {
+  background-color:rgba(0, 220, 197, 0.65) !important;
+}
+
+.btn {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.lhlc {
+  text-align: center;
+  font-size: 8px;
+  color: white;
+}
+
+.con2m {
+  background-color: #EDF9F5;
+  padding: 20px 20px;
+}
+
+.con3m {
+  background-color: #D6F3E9;
+  padding: 50px 50px;
+}
+
+.con4m {
+  background-image: url("C:/Users/Rameshwar/Desktop/Ram/Images/bgmiddle.png");
+  background-position: center;
+  background-size: 950px 300px;
+  text-align:center;
+  margin:auto;
+}
+
+.con5m {
+  background-color: #D6F3E9;
+
+}
+
+.con2up {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.con2l {
+  font-size: 8px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.textb {
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0 0 0px;
+  color: white;
+}
+
+.textn {
+  font-size: 10px;
+  font-weight: normal;
+  text-align: center;
+  padding: 8px 0 0 0px;
+  color: white;
+}
+
+.contactus {
+  padding: 30px;
+  font-size: 35px;
+}
+
+.hear {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.email {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.features {
+font-size: 30px;
+text-align: center;
+}
+		h1 {padding: 100px 0; font-weight: 400; text-align: center;}
+		p {margin: 0 0 20px; line-height: 1.5;}
+
+		.main {margin: 0 auto; min-width: 320px; max-width: 800px;background-color: #00DCC5;}
+		.content {background: #D6F3E9; color: #373737;}
+		.content > div {display: none; padding: 20px 25px 5px;}
+
+		.main > input {display: none;}
+		label {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center;background-color: #00DCC5;color: #007377;}
+		label:hover {color: #fff; cursor: pointer;}
+		.main > input:checked + label {background: #ed5a6a; color: #fff;}
+
+		#tab1:checked ~ .content #content1,
+		#tab2:checked ~ .content #content2,
+		#tab3:checked ~ .content #content3,
+		#tab4:checked ~ .content #content4,
+		#tab5:checked ~ .content #content5 {
+		  display: block;
+		}
+		
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color:#D6F3E9;
+}
+
+input[type=submit] {
+  background-color: #008696;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
+<body>
+<div class="w3-container" id="fd_listing" > <!-- Main Page -->
+
+<div class="w3-container bgimg"><!-- Header Main Container -->
+
+	<div class="w3-container" style="height:305px"><!-- Header Upper Conatainer -->
+
+	</div>
+	<div class="w3-container w3-theme-l1" style="height:240px"><!-- Header Lower Conatainer -->
+		<div class="w3-row" style="height:130px; width: 600px; margin:auto; padding-top: 40px;"><!-- Lower Header Upper Conatainer -->
+			<div class="w3-col" style="width:70%"><!-- Text -->
+				We <img src="C:\Users\Rameshwar\Desktop\Ram\Images/heart.png" alt="Love" height="32" width="39"> Animals <br>
+				So we put them where we can see them.
+			</div>
+			<div class="w3-col" style="width:30%"><!-- image -->
+				<img src="C:\Users\Rameshwar\Desktop\Ram\Images/laptop.png" alt="Love" height="100%" width="100%">
+			</div>		
+		</div>
+		<div class="w3-row" id="rcorners1"><!-- Lower Header Middle Conatainer -->
+		
+			<div class="w3-col" style="width:60%"><!-- Text -->
+				If you're an animal lover, this FREE extension is a great way to get your daily dose of cuteness overload.
+			</div>
+			<div class="w3-col" style="width:20%"><!-- Foot Print -->
+				<img src="C:\Users\Rameshwar\Desktop\Ram\Images/foot.png" alt="Love" height="85" width="79">
+			</div>
+			<div class="w3-col" style="width:20%"><!-- Button -->
+				<button class="btn success">Continue</button>
+			</div>
+
+		</div>
+	
+		<div class="w3-container lhlc" style="height:25px"><!-- Lower Header Lover Conatainer -->
+			Please read carefully: By clicking "Continue" button above, you agreeing to install this extension and agreeing to abide by the End User Licence Agreement and Privacy Policy. |  You can uninstall the extension at any time.
+		</div>	
+	
+	</div>
+
+</div>
+
+	<div class="w3-col con2m"><!--Conatainer 2 main -->
+		<div class="w3-row con2up" style="height:30%"><!-- container 2 upper -->
+			Just a Pet Lover
+		</div>
+		<div class="w3-row" style="height:70%"><!-- container 2 middle -->
+			<div class="w3-row"><!-- container 2 middle main -->
+				<div class="w3-col" style="width:40%;padding-right: 40px;"><!-- container 2 middle img -->
+					<img src="C:\Users\Rameshwar\Desktop\Ram\Images/petlove.png" alt="Love" height="139" width="142" align="right">
+				</div>
+				<div class="w3-col" style="width:42%"><!-- container 2 middle text -->
+					Just a Pet Lover Page is made for humans who truly love animals and the environment. The extension highlight interesting animal video and news and brings you awesome browser wallpapers that will brighten up your day. <br><br>
+					These features updates in real-time.So, you really feel like you're part of the animal kingdom. 
+				</div>		
+			</div>
+		</div>
+		<div class="w3-row con2l" style="height:30%"><!-- container 2 lower -->
+			Check our Piracy Policy and Terms of Service Pages for more details!
+		</div>		
+	</div>
+	
+	<div class="w3-col con3m"><!--Conatainer 3 main -->
+	
+		<div class="w3-row features" style="height:75px"><!-- container 3 upper -->
+			Features
+		</div>		
+		
+		<div class="w3-row" style="height:70%"><!-- container 2 lower -->
+		
+			<div class="row">
+				<div class="column">
+					<img src="C:\Users\Rameshwar\Desktop\Ram\Images/adwall.png" alt="Love" height="32" width="32" style="display: block; margin-left: auto; margin-right: auto;">
+					<div class="textb">Adorable Wallpapers</div>
+					<div class="textn">Find an adorable animal on each new tab, designed to keep your spirits high.</div>
+				</div>
+				<div class="column">
+					<img src="C:\Users\Rameshwar\Desktop\Ram\Images/vived.png" alt="Love" height="32" width="32" style="display: block; margin-left: auto; margin-right: auto;">
+					<div class="textb">Viral Videos</div>
+					<div class="textn">Seriously concerning or hilariously wild, you'll know what's going viral.</div>
+				</div>
+				<div class="column">
+					<img src="C:\Users\Rameshwar\Desktop\Ram\Images/powsrch.png" alt="Love" height="32" width="32" style="display: block; margin-left: auto; margin-right: auto;">
+					<div class="textb">Powerful Search</div>
+					<div class="textn">Enjoy a smooth search engine experience.</div>
+				</div>
+				<div class="column">
+					<img src="C:\Users\Rameshwar\Desktop\Ram\Images/tndtwt.png" alt="Love" height="32" width="32" style="display: block; margin-left: auto; margin-right: auto;">
+					<div class="textb">Trending Tweets</div>
+					<div class="textn">Receive twitter updates with important news on your furry friends </div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>	
+
+<div class="w3-container con4m"><!-- Container 4 -->
+	<div class="contactus" style="height:80px">
+		Contact Us
+	</div>
+	<div class="hear" style="height:50px">
+		We'd love to hear from you ! 
+	</div>
+	<div class="email" style="height:75px">
+		at <a href = "mailto: contact@lmpts.com">contact@lmpts.com</a>
+	</div>
+</div>
+
+<div class="w3-container con5m"><!-- Container 5 -->
+
+		<div class="main">
+  
+		  <input id="tab1" type="radio" name="tabs">
+		  <label for="tab1">About Us</label>
+	
+		  <input id="tab2" type="radio" name="tabs">
+		  <label for="tab2">Term of Service</label>
+	
+		  <input id="tab3" type="radio" name="tabs">
+		  <label for="tab3">Privacy Policy</label>
+	
+		  <input id="tab4" type="radio" name="tabs">
+		  <label for="tab4">Contact Us</label>
+
+		  <input id="tab5" type="radio" name="tabs" checked>
+		  <label for="tab5">Uninstall</label>
+		  
+		  <div class="content">  
+			  <div id="content1">
+				<p>
+				  Write about us here
+				<p>
+				  more about us
+				</p>
+			  </div>
+	
+			  <div id="content2">
+				<p>
+				 write term of service here
+				</p>
+				<p>
+				  more about term of service
+				</p>
+			  </div>
+	
+			  <div id="content3">
+				<p>
+				  write Privacy Policy here
+				</p>
+				<p>
+				  more about Privacy Policy
+				</p>
+			  </div>
+	
+			  <div id="content4">
+				<p>
+				 write about contact us
+				</p>
+			  </div>
+			  <div id="content5">
+				<p>
+				 We are sorry to see you go !
+				</p>
+				<p>
+				 Please help us improve TrailerTab with your feedback.
+				</p>
+  <form action="/action_page.php">
+    <input type="text" id="email" placeholder="Email ID">
+    <input type="text" id="msg" placeholder="Message" ></input>
+    <input type="submit" value="Submit">
+  </form>
+			  </div>			  
+		  </div>
+	
+		</div>
+
+</div>
+
+</div>
+</body>
+</html>
