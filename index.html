@@ -21,7 +21,7 @@ body, html {
     padding: 13px 25px;
     border-radius: 10px;
     background: white;
-    display: inline-block;
+    display: none;
     width: auto;
     z-index: 1050;
     margin: 20px auto auto 20px;
@@ -35,7 +35,7 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-		display: none;
+    display: none;
 }
 
 .column {
@@ -436,7 +436,8 @@ input[type=submit]:hover {
 	else if (isEdge) {document.getElementById("alert").style.right = "50%";document.getElementById("alert").style.bottom = "0";}
 	else if (isSafari) document.getElementById("alert").style.right = '0%';
 	
-  document.getElementById("overlay").style.display="block"
+   document.getElementById("overlay").style.display="block";
+   document.getElementById("alert").style.display = "block";
 
 }
 	</script>
