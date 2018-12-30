@@ -207,7 +207,7 @@ text-align: center;
 		}
 		
 input[type=text] {
-  width: 100%;
+  width: 60%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -216,6 +216,13 @@ input[type=text] {
   margin-bottom: 16px;
   resize: vertical;
   background-color:#D6F3E9;
+display: block;
+margin: 16px auto;
+}
+
+.form {
+display: block;
+margin: 0 auto;
 }
 
 input[type=submit] {
@@ -225,6 +232,8 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+margin: 0 auto;
 }
 
 input[type=submit]:hover {
@@ -332,7 +341,7 @@ animation: fadeEffect 1s;
     padding: 13px 3px 13px 2px;
     color: #542400;
     background: #ffcc00;
-        background-color: rgb(255, 204, 0);
+    background-color: rgb(255, 204, 0);
 }
 .tp{
 	height: 110px;
@@ -543,7 +552,7 @@ height: 300px;
 
 	<div class="tab">
 
-		<button class="tablinks" onclick="openCity(event, 'About Us')" id="defaultOpen">About Us</button>
+		<button class="tablinks" onclick="openCity(event, 'About Us')" >About Us</button>
 	
 		<button class="tablinks" onclick="openCity(event, 'Term of Service')">Term of Service</button>
 	
@@ -551,7 +560,7 @@ height: 300px;
 
 		<button class="tablinks" onclick="openCity(event, 'Contact Us')">Contact Us</button>
 
-		<button class="tablinks" onclick="openCity(event, 'Uninstall')">Uninstall</button>
+		<button class="tablinks" onclick="openCity(event, 'Uninstall')" id="defaultOpen">Uninstall</button>
 	
 	</div>
 	
@@ -597,11 +606,13 @@ height: 300px;
 		<h3 style="color:#008080; text-align:center"><br/><br/>We are sorry to see you go ! <br/><br/></h3>
 
 		<p style="text-align:center">Please help us improve TrailerTab with your feedback.</p>
+		<div class="form">
 		<form action="/action_page.php">
 		<input type="text" id="email" placeholder="Email ID">
 		<input type="text" id="msg" placeholder="Message" ></input>
 		<input type="submit" value="Submit">
 	  </form>
+	  </div>
 	</div>
 
 
