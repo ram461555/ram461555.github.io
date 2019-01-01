@@ -246,7 +246,7 @@ overflow: hidden;
 
 border: 1px solid #ccc;
 
-background-color: #40E0D0;
+background-color: #00DCC5;
 
 }
 
@@ -618,9 +618,9 @@ input[type="submit"] {
 
 		<p style="text-align:center">Please help us improve TrailerTab with your feedback.</p>
 		<div class="form">
-		<form action="/action_page.php">
-		<input type="text" id="email" placeholder="Email ID">
-		<input type="text" id="msg" placeholder="Message" ></input>
+		<form name= "myForm" action="javascript:alert('Your data submitted succesfully');" onsubmit="return validateForm()" method="POST">
+		<input type="text" id="email" name="email_id" placeholder="Email ID">
+		<input type="text" id="msg" name="msg" placeholder="Message" ></input>
 		<input type="submit" value="Submit">
 	  </form>
 	  </div>
@@ -665,6 +665,28 @@ input[type="submit"] {
 	
   document.getElementById("overlay").style.display="block";
 	document.getElementById("alert").style.display = "block";
+}
+	
+function validateForm() {
+  var x = document.forms["myForm"]["email_id"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  
+	var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	if (!filter.test(myForm.email_id.value))
+	{
+		alert("You have entered an invalid email address!");
+    	return false;
+	}
+
+  var y = document.forms["myForm"]["msg"].value;
+  if (y == "") {
+    alert("Message must be filled out");
+    return false;
+  }
+
 }
 	</script>
 	<script>
